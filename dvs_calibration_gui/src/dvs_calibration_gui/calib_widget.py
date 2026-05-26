@@ -54,7 +54,7 @@ class CalibWidget(QWidget):
   def pattern_detections_cb(self, msg):
     self._num_pattern_detections = msg.data
     if (self._num_pattern_detections > 0):
-    self.button_start.setEnabled( True )
+      self.button_start.setEnabled( True )
     self._update_required = True
 
   def calibration_output_cb(self, msg):
